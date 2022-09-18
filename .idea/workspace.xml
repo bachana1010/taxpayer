@@ -1,0 +1,355 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="130247d0-9a0c-4629-b89c-452be0ebfbdb" name="Changes" comment="Initial commit">
+<<<<<<< HEAD
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/calculator/templates/calculator.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/calculator/templates/calculator.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/calculator/templates/taximport.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/calculator/templates/taximport.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/calculator/templates/welcome.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/calculator/templates/welcome.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/calculator/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/calculator/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/login/templates/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/login/templates/login.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/login/templates/registration.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/login/templates/registration.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/static/img/img-1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/static/img/img-2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/static/img/img-3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/static/img/img-4.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/static/img/logo.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/static/img/user-1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/static/img/user-2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/static/img/user-3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/static/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/static/main.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/static/styles/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/app/static/styles/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/tax_base.db" beforeDir="false" afterPath="$PROJECT_DIR$/app/tax_base.db" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/templates/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/templates/base.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/templates/home.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/templates/home.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/manager.py" beforeDir="false" afterPath="$PROJECT_DIR$/manager.py" afterDir="false" />
+=======
+      <change afterPath="$PROJECT_DIR$/app/calculator/templates/income_list.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/calculator/templates/land_list.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/calculator/templates/property_property_list.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/calculator/templates/vat_list.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/calculator/templates/welcome.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/calculator/templates/welcome.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/calculator/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/calculator/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/static/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/static/main.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/static/styles/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/app/static/styles/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/tax_base.db" beforeDir="false" afterPath="$PROJECT_DIR$/app/tax_base.db" afterDir="false" />
+>>>>>>> github/master
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="CSS File" />
+        <option value="JavaScript File" />
+        <option value="Python Script" />
+        <option value="HTML File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Merge.Settings">
+    <option name="BRANCH" value="origin/master" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GithubPullRequestsUISettings">
+    <option name="selectedUrlAndAccountId">
+      <UrlAndAccount>
+        <option name="accountId" value="3a830253-faa0-4523-a27c-3ab44e9a991e" />
+        <option name="url" value="https://github.com/bachana1010/newtax.git" />
+      </UrlAndAccount>
+    </option>
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="2DlFwX63AxvrfedudpTJPW3DMIE" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/home/badri/Desktop/my project unilab (js , flask)/tax_project (1.1 version +calculator)/app/calculator/templates&quot;,
+    &quot;list.type.of.created.stylesheet&quot;: &quot;CSS&quot;,
+    &quot;two.files.diff.last.used.file&quot;: &quot;/home/badri/Desktop/my project unilab (js , flask)/tax_project/app/static/styles/style.css&quot;
+  }
+}</component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/app/calculator/templates" />
+      <recent name="$PROJECT_DIR$/app" />
+      <recent name="$PROJECT_DIR$/app/templates" />
+      <recent name="$PROJECT_DIR$/app/calculator" />
+      <recent name="$PROJECT_DIR$/app/templates/static" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/app/static/styles" />
+      <recent name="$PROJECT_DIR$/app/calculator/templates" />
+      <recent name="$PROJECT_DIR$/app/static/styles1" />
+      <recent name="$PROJECT_DIR$/app" />
+      <recent name="$PROJECT_DIR$/app/templates/static/styles" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Python.manager">
+    <configuration name="currency" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="tax_project" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/app/services" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/app/services/currency.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="main" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
+      <module name="tax_project" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/main.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="manager" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="tax_project" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/manager.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Python.manager" />
+        <item itemvalue="Python.currency" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="130247d0-9a0c-4629-b89c-452be0ebfbdb" name="Changes" comment="" />
+      <created>1661266003034</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1661266003034</updated>
+      <workItem from="1661266004338" duration="23000" />
+      <workItem from="1661266058769" duration="7818000" />
+      <workItem from="1661274390786" duration="12000" />
+      <workItem from="1661274511544" duration="11708000" />
+      <workItem from="1661418770397" duration="787000" />
+      <workItem from="1661510872967" duration="67000" />
+      <workItem from="1661518136932" duration="768000" />
+      <workItem from="1661521929712" duration="647000" />
+      <workItem from="1661585247959" duration="253000" />
+      <workItem from="1661587089821" duration="34754000" />
+      <workItem from="1661687450238" duration="1089000" />
+      <workItem from="1661693295932" duration="270000" />
+      <workItem from="1661693636936" duration="2640000" />
+      <workItem from="1661847411594" duration="11026000" />
+      <workItem from="1661868552000" duration="1468000" />
+      <workItem from="1661937405717" duration="8522000" />
+      <workItem from="1662023867219" duration="604000" />
+      <workItem from="1662190393723" duration="20046000" />
+      <workItem from="1662279908026" duration="955000" />
+      <workItem from="1662283887969" duration="4722000" />
+      <workItem from="1662293587556" duration="1546000" />
+      <workItem from="1662295243114" duration="5912000" />
+      <workItem from="1662324526916" duration="17191000" />
+      <workItem from="1662385491917" duration="416000" />
+      <workItem from="1662531758290" duration="1326000" />
+      <workItem from="1662623715599" duration="887000" />
+      <workItem from="1662633409223" duration="12000" />
+      <workItem from="1662636882316" duration="28000" />
+      <workItem from="1662641507494" duration="786000" />
+      <workItem from="1662663948325" duration="725000" />
+      <workItem from="1662702714161" duration="6665000" />
+      <workItem from="1662713037563" duration="4940000" />
+      <workItem from="1662717997630" duration="1013000" />
+      <workItem from="1662719687307" duration="2586000" />
+<<<<<<< HEAD
+      <workItem from="1662812020258" duration="35714000" />
+      <workItem from="1663013461232" duration="1046000" />
+      <workItem from="1663055224412" duration="690000" />
+      <workItem from="1663138463708" duration="10962000" />
+      <workItem from="1663149516488" duration="9801000" />
+      <workItem from="1663219709862" duration="6945000" />
+      <workItem from="1663244643222" duration="88000" />
+      <workItem from="1663244895738" duration="895000" />
+      <workItem from="1663246219437" duration="72000" />
+      <workItem from="1663247918919" duration="1073000" />
+      <workItem from="1663249969455" duration="223000" />
+      <workItem from="1663256178363" duration="762000" />
+      <workItem from="1663311863694" duration="1384000" />
+      <workItem from="1663315352696" duration="17000" />
+      <workItem from="1663320591517" duration="1568000" />
+      <workItem from="1663339352700" duration="605000" />
+=======
+      <workItem from="1662812020258" duration="35103000" />
+>>>>>>> github/master
+    </task>
+    <task id="LOCAL-00001" summary="Initial commit">
+      <created>1662287860138</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1662287860138</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Initial commit">
+      <created>1662288220716</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1662288220716</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Initial commit">
+      <created>1662297527904</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1662297527904</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Initial commit">
+      <created>1662330289840</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1662330289840</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Initial commit">
+      <created>1662368637246</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1662368637246</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Initial commit">
+      <created>1662375614663</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1662375614663</updated>
+    </task>
+    <task id="LOCAL-00007" summary="Initial commit">
+      <created>1662382998302</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1662382998302</updated>
+    </task>
+    <task id="LOCAL-00008" summary="Initial commit">
+      <created>1662719700768</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1662719700768</updated>
+    </task>
+<<<<<<< HEAD
+    <task id="LOCAL-00009" summary="Initial commit">
+      <created>1662978247462</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1662978247462</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
+=======
+    <option name="localTasksCounter" value="9" />
+>>>>>>> github/master
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="master" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Initial commit" />
+    <option name="LAST_COMMIT_MESSAGE" value="Initial commit" />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/tax_project__1_1_version__calculator_$manager.coverage" NAME="manager Coverage Results" MODIFIED="1662708266864" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/tax_project__1_1_version__calculator_$currency.coverage" NAME="currency Coverage Results" MODIFIED="1662286177278" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/app/services" />
+    <SUITE FILE_PATH="coverage/tax_project__1_2_version__tox___copy_$manager.coverage" NAME="manager Coverage Results" MODIFIED="1662799239680" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/tax_project$manager.coverage" NAME="manager Coverage Results" MODIFIED="1661682369628" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+<<<<<<< HEAD
+    <SUITE FILE_PATH="coverage/3_0___List$manager.coverage" NAME="manager Coverage Results" MODIFIED="1663055311636" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/4_0___List__copy_$manager.coverage" NAME="manager Coverage Results" MODIFIED="1663257380013" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+=======
+    <SUITE FILE_PATH="coverage/3_0___List$manager.coverage" NAME="manager Coverage Results" MODIFIED="1662968355912" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+>>>>>>> github/master
+    <SUITE FILE_PATH="coverage/tax_project$main.coverage" NAME="main Coverage Results" MODIFIED="1661266950622" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+  </component>
+</project>

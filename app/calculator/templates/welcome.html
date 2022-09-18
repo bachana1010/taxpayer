@@ -1,0 +1,451 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+{% if current_user.is_authenticated %}
+<input type="text" disabled name= "lab" for="text" class="user_id" value={{ current_user.username }}>
+
+{% else %}
+<p>hello customer</p>
+{% endif %}
+
+<div class="welcome-container">
+    <div class="calculator-containner_label">
+        <div class="calculator-group">
+
+            <div class="input-group">
+                <div class="dropdown">
+                    <select name="" class="list_dropdown">
+                        <option value="small">Small business</option>
+                        <option value="property">Propery</option>
+                        <option value="Vat">Vat</option>
+                        <option value="income">Income</option>
+
+                    </select>
+                </div>
+            </div>
+
+            <!--            small business section-->
+<!--            <form action="/welcome" method="post">-->
+            <section class="small-business">
+                <div>
+                <input type="text" class="tax_first_input" name="inp" placeholder="Enter Money ammount" >
+                </div>
+
+                <div class="dropdown_month">
+                    <select name="month" class="list_dropdown_month">
+                        <option value="January">January</option>
+                        <option value="February">February</option>
+                        <option value="March"> March</option>
+                        <option value="April"> April</option>
+                        <option value="May"> May</option>
+                        <option value="June"> June</option>
+                        <option value="Jule"> Jule</option>
+                        <option value="August"> August</option>
+                        <option value="September"> September</option>
+                        <option value="Octomber"> Octomber</option>
+                        <option value="November"> November</option>
+                        <option value="December"> December</option>
+
+                    </select>
+                </div>
+
+                <table>
+
+                    <tr>
+                        <td>
+                            <div class="tax_amount">
+                                <button class="sb_button" for="text" onclick="function_small()">Tax Amount</button>
+                            </div>
+                        </td>
+                        <td>
+                            <div >
+                                <input type="text" disabled name= "lab" for="text" class="tax_amount_value" value="0"/>
+                            </div>
+                        </td>
+
+                    </tr>
+
+                    <tr>
+
+                        <td>
+                            <button class="send_btn" name='but' disabled onclick="sb_api()" >Send Small bussines declaration</button>
+
+                        </td>
+
+                        <tr>
+                        <td>
+                                <button class="show_sb_declaration" onclick="clear_information()">   <a href="/sb_list">small busines list</a>
+
+                                </button>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+
+                <div class="alert">
+                      <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span>
+<<<<<<< HEAD
+                      <strong class="alert_sent_color">Sent successfully!</strong>
+=======
+                      <strong>Sent successfully!</strong>
+>>>>>>> github/master
+                    </div>
+
+                        </td>
+                        </tr>
+                    </tr>
+                </table>
+<!--                    </form>-->
+
+            </section>
+
+
+            <!--            property tax section-->
+
+            <section class="property_tax">
+                <div class="check">
+                    <button class="land_btn">land</button>
+                    <button class="property_btn">property</button>
+
+
+                </div>
+
+                <section class="land_tax_section">
+                    <input type="text" class="tax_land_input" value="" placeholder="Enter Land Hectare ">
+
+                    <div class="dropdown_month">
+                        <select name="pirveli" class="list_dropdown_year_land">
+                            <option value="2022">2022</option>
+                            <option value="2021">2021</option>
+                            <option value="2020"> 2020</option>
+                            <option value="2019"> 2019</option>
+                        </select>
+                    </div>
+
+                    <div class="dropdown_month">
+                        <select name="meore" class="list_dropdown_city">
+                            <option value="Kutaisi">Kutaisi</option>
+                            <option value="Tbilisi">Tbilisi</option>
+                            <option value="Batumi"> Batumi</option>
+                            <option value="Sokhum"> Sokhum</option>
+                        </select>
+                    </div>
+
+                                  <table>
+
+                    <tr>
+                        <td>
+                          <div class="label_land_result">
+                        <button type="text" class="land_button" name= "lab" for="text"  onclick="Land_amount()"> Tax Value </button>
+                        <div>
+                        </td>
+                        <td>
+                            <div >
+                        <input type="text" disabled name= "land" for="text" class="label_tax_land" value="0"/>
+                            </div>
+                        </td>
+
+                    </tr>
+
+                    <tr>
+
+                        <td>
+                            <button class="send_land_btn" disabled onClick="Property_api()">Send Land Declaration</button>
+                        </td>
+
+                        <tr>
+                            <td>
+                                <button class="show_land_declaration" onclick="clear_information()">   <a href="/property_land_list">land dec  list</a>
+
+                                </button>
+                    </tr>
+                        </td>
+                        <tr>
+
+                        <td>
+
+                <div class="alert_land">
+                      <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span>
+<<<<<<< HEAD
+                      <strong class="alert_sent_color">Sent successfully!</strong>
+=======
+                      <strong>Sent successfully!</strong>
+>>>>>>> github/master
+                    </div>
+
+                        </td>
+                        </tr>
+
+                    </tr>
+                </table>
+
+
+
+
+
+                </section>
+
+                <section class="property_tax_section">
+
+                    <input type="text" class="property_property_input" placeholder="Enter Your Year Income Money Mount ">
+                    <input type="text" class="property_property_input1" placeholder="Enter Your Property Value ">
+
+                    <div class="dropdown_month">
+                        <select name="" class="list_dropdown_year">
+                            <option value="2022">2022</option>
+                            <option value="2021">2021</option>
+                            <option value="2020"> 2020</option>
+                            <option value="2019"> 2019</option>
+                        </select>
+                    </div>
+
+                     <table>
+
+                    <tr>
+                        <td>
+                          <div class="label_land_result">
+                        <button type="text" class="property_button" name= "lab" for="text"  onclick="property_amount()"> Tax Value </button>
+                        <div>
+                        </td>
+                        <td>
+                               <div >
+                        <input type="text" disabled name= "land" for="text" class="label_tax_property" value="0"/>
+                            </div>
+                        </td>
+
+                    </tr>
+
+                    <tr>
+
+                        <td>
+                    <button class="send_property_btn" disabled onclick="Property_property_api()">Send Property Declaration</button>
+<<<<<<< HEAD
+                        </td>
+                     <tr>
+                            <td>
+                                <button class="show_property_declaration" onclick="clear_information()">   <a href="/property_property_list">property dec list</a>
+
+                                </button>
+                    </tr>
+                        </td>
+                        <tr>
+
+                        <td>
+
+                <div class="alert_property">
+                      <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span>
+                      <strong class="alert_sent_color">Sent successfully!</strong>
+                    </div>
+
+                        </td>
+=======
+                        </td>
+                     <tr>
+                            <td>
+                                <button class="show_property_declaration" onclick="clear_information()">   <a href="/property_property_list">property dec list</a>
+
+                                </button>
+                    </tr>
+                        </td>
+                        <tr>
+
+                        <td>
+
+                <div class="alert_property">
+                      <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span>
+                      <strong>Sent successfully!</strong>
+                    </div>
+
+                        </td>
+>>>>>>> github/master
+                        </tr>
+
+                    </tr>
+                </table>
+
+
+
+
+
+
+                </section>
+
+            </section>
+
+<!--            Income Tax Section-->
+            <section class="IncomeTaxSection">
+                <input type="text" class="income_first_input" placeholder="Gross income">
+                <input type="text" class="income_second_input" placeholder="Deductions money amount">
+
+                    <div class="dropdown_month">
+                    <select name="" class="list_dropdown_month_income">
+                      <option value="January">January</option>
+                        <option value="February">February</option>
+                        <option value="March"> March</option>
+                        <option value="April"> April</option>
+                        <option value="May"> May</option>
+                        <option value="June"> June</option>
+                        <option value="Jule"> Jule</option>
+                        <option value="August"> August</option>
+                        <option value="September"> September</option>
+                        <option value="Octomber"> Octomber</option>
+                        <option value="November"> November</option>
+                        <option value="December"> December</option>
+
+                    </select>
+                         <table>
+
+                    <tr>
+                        <td>
+                          <div class="label_land_result">
+                            <button type="text" class="income_button" name= "lab" for="text"  onclick="income_amount()"> Tax Value </button>
+                        <div>
+                        </td>
+                        <td>
+                               <div >
+                            <input type="text" disabled name= "land" for="text" class="label_tax_income" value="0"/>
+                            </div>
+                        </td>
+
+                    </tr>
+
+                    <tr>
+
+                        <td>
+                    <button class="send_income_btn" disabled onclick="income_api()">Send Income Declaration</button>
+                        </td>
+                  <tr>
+                            <td>
+                                <button class="show_income_declaration" onclick="clear_information()">   <a href="/income_list">income dec list</a>
+
+                                </button>
+                    </tr>
+                        </td>
+                        <tr>
+
+                        <td>
+
+                <div class="alert_income">
+                      <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span>
+<<<<<<< HEAD
+                      <strong class="alert_sent_color">Sent successfully!</strong>
+=======
+                      <strong>Sent successfully!</strong>
+>>>>>>> github/master
+                    </div>
+
+                        </td>
+                        </tr>
+
+                    </tr>
+                </table>
+
+
+
+
+        </section>
+
+            <!--            Vat Tax section-->
+
+            <section class="VatTaxSection">
+                <input type="text" class="vat_first_input" placeholder="Taxable Amount">
+                <input type="text" class="vat_second_input" placeholder="The amount of VAT paid at the previous stage">
+
+                    <div class="dropdown_month">
+                    <select name="" class="list_dropdown_month_vat">
+                   <option value="January">January</option>
+                        <option value="February">February</option>
+                        <option value="March"> March</option>
+                        <option value="April"> April</option>
+                        <option value="May"> May</option>
+                        <option value="June"> June</option>
+                        <option value="Jule"> Jule</option>
+                        <option value="August"> August</option>
+                        <option value="September"> September</option>
+                        <option value="Octomber"> Octomber</option>
+                        <option value="November"> November</option>
+                        <option value="December"> December</option>
+
+                    </select>
+
+                         <table>
+
+                    <tr>
+                        <td>
+                          <div class="label_land_result">
+                            <button type="text" class="vat_button" name= "lab" for="text"  onclick="vat_amount()"> Tax Value </button>
+                        <div>
+                        </td>
+                        <td>
+                               <div >
+                            <input type="text" disabled name= "land" for="text" class="label_tax_vat" value="0"/>
+                            </div>
+                        </td>
+
+                    </tr>
+
+                    <tr>
+
+                        <td>
+                    <button class="send_vat_btn" disabled onclick="vat_api()">Send Vat Declaration</button>
+                        </td>
+
+                         <tr>
+                            <td>
+                                <button class="show_vat_declaration" onclick="clear_information()">   <a href="/vat_list">vat dec list</a>
+
+                                </button>
+<<<<<<< HEAD
+                            </td>
+
+=======
+>>>>>>> github/master
+                    </tr>
+                        </td>
+                        <tr>
+
+                        <td>
+
+                <div class="alert_vat">
+                      <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span>
+<<<<<<< HEAD
+                      <strong class="alert_sent_color">Sent successfully!</strong>
+=======
+                      <strong>Sent successfully!</strong>
+>>>>>>> github/master
+                    </div>
+
+                        </td>
+                        </tr>
+
+
+                    </tr>
+                </table>
+
+
+
+
+
+
+
+            </section>
+
+        </div>
+    </div>
+</div>
+
+
+
+
+{% endblock %}
+
+{% block after_script %}
+<script>
+    smallBusinessDeclaration();
+
+</script>
+
+{% endblock %}
+

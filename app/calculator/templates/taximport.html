@@ -1,0 +1,56 @@
+{% extends "base.html" %}
+{% block content %}
+
+<div class="calculator-container">
+    <div class="calculator-containner_label">
+        <h1 class="calculator-title">duty import calculator</h1>
+
+        <div class="calculator-group">
+            <div class="input-group success">
+                <label>
+                    <input type="text" class="duty_first_input" placeholder="The value of the item">
+                </label>
+
+                <div>
+                <select name="" class="list_dropdown_currency">
+                        <option value="USD">USD</option>
+                        <option value="GBP">GBP</option>
+                        <option value="EUR">EUR</option>
+                        <option value="TRY">TRY</option>
+                                  <option value="CHF">CHF  </option>
+
+                     </div>
+>
+                </select>
+
+                <div class="">
+                    <h1 class="result_duty">0</h1>
+
+                </div>
+                <div>
+                    <button class="i_calculation">calculation</button>
+
+                </div>
+
+
+
+
+
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+{% endblock %}
+
+{% block after_script %}
+<script>
+    curr();
+
+</script>
+
+{% endblock %}

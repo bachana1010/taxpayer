@@ -1,0 +1,34 @@
+{% extends "base.html" %}
+{% block content %}
+
+
+
+
+<table class="table table-striped table-dark">
+  <thead>
+    <tr>
+      <th scope="col">#</th>
+      <th scope="col">amount</th>
+      <th scope="col">month</th>
+      <th scope="col">tax_amount</th>
+    </tr>
+  </thead>
+  <tbody>
+
+
+        {% for sb  in sb_list %}
+
+     <tr>
+
+      <th scope="row">{{ sb.id }}</th>
+      <td> {{ sb.amount }} </td>
+      <td>{{ sb.month }}</td>
+      <td>{{ sb.tax_amount }}</td>
+    </tr>
+        {% endfor %}
+
+
+  </tbody>
+</table>
+
+{% endblock %}>
