@@ -199,61 +199,10 @@ display: flex;
 	font-weight: lighter;
   }
 
-<<<<<<< HEAD
 .login_password,
 .login_email{
   font-size: 1.25rem;
 	padding: 0.5em;
-=======
-  /*msg*/
-  .input-group .msg {
-	display: none;
-	font-size: .75rem;
-  }
-
-  .input-group.success .msg,
-  .input-group.error .msg {
-	display: None;
-  }
-  .input-group.error .msg {
-	color: hsl(var(--error-hsl));
-  }
-
-  .input-group.success .msg {
-	color: hsl(var(--success-hsl));
-  }
-
-    #email{
-	font-size: 1.25rem;
-	padding: .5em;
-	background-color: hsl(var(--primary-light-hsl), .3);
-	border: none;
-	outline: none;
-	border-radius: .25em;
-	color: white;
-	font-weight: lighter;
-      box-shadow: 0 0 0 1px hsl(var(--success-hsl));
-
-  }
-
-      .login-button {
-	padding: .5em 1em;
-	font-size: 1.5rem;
-	font-weight: lighter;
-	color: black;
-  background-image: linear-gradient(to right, #a1c4fd 0%, #c2e9fb 51%, #a1c4fd 100%);
-	border: 1px solid hsl(var(--primary-hsl));
-	border-radius: .25em;
-	outline: none;
-	cursor: pointer;
-        width: 100px;
-  }
-      .password{	font-size: 1.25rem;
-	padding: .5em;
-	background-color: hsl(var(--primary-light-hsl), .3);
-	border: none;
-	outline: none;
->>>>>>> github/master
 	border-radius: .25em;
 	font-weight: lighter;
 	border: 1px solid black;
@@ -519,7 +468,6 @@ margin-left: 20px;
 .list_dropdown_year_land,
 .list_dropdown,
 .list_dropdown_city,
-<<<<<<< HEAD
 .list_dropdown_month_income,
 .list_dropdown_month_vat{
       	position:relative;
@@ -546,15 +494,6 @@ margin-left: 20px;
   width: 700px;
   margin-top: 20px;
     margin-left: 30px;
-=======
-.list_dropdown_year,
-.list_dropdown_month,
-.list_dropdown_month_vat,
-.list_dropdown_month_income{
-    	background: linear-gradient(135deg,  #485563,#2932,#7AA1D2 100%);
-  box-shadow: #9be15d 0 0 20px;
-  width: 600px;
->>>>>>> github/master
 
 }
 
@@ -720,7 +659,6 @@ position:relative;
 }
 
 .send_land_btn,
-<<<<<<< HEAD
 .show_land_declaration{
      margin-top:30px;
  	position:relative;
@@ -737,23 +675,6 @@ position:relative;
     background-position: center;
   margin-left:200px;
 }
-=======
-.send_property_btn,
-.send_vat_btn,
-.send_income_btn,
-.show_sb_declaration,
-.show_land_declaration,
-.show_property_declaration,
-.show_vat_declaration,
-.show_income_declaration{
-    	background: linear-gradient(135deg,  #485563,#2932,#7AA1D2 100%);
-    width:300px;
-  border-radius: 20px;
-  margin-top:30px;
-  background-position: center;
-  margin-left:150px;
-      box-shadow: #9be15d 0 0 20px;
->>>>>>> github/master
 
 .send_property_btn,
 .send_vat_btn,
@@ -891,59 +812,7 @@ display:none}
   color: black;
 }
 
-<<<<<<< HEAD
-=======
-.list_dropdown_currency{
-    	background: linear-gradient(135deg,  #485563,#2932,#7AA1D2 100%);
-  box-shadow: #9be15d 0 0 20px;
-  width: 700px;
-  margin-top: 30px;
-    display:inline-block;
-
-
-
+.table {
+    padding:2em 2em;
+    width: 20px;
 }
-
-
-
-/*#message-succsesful declartion send*/
-.alert{
-  padding: 20px;
-  background: linear-gradient(135deg, #add100,#7b920a, 100%);
-  margin-top:30px;
-height: 50px;
-  width: 400px;
-    margin-left:100px;
-    box-shadow: #9be15d 0 0 20px;
-text-align: center;
-display:none}
-
-.alert_land,
-.alert_property,
-.alert_vat,
-.alert_income{
-  padding: 20px;
-  background: linear-gradient(135deg, #add100,#7b920a, 100%);
-  margin-top:30px;
-height: 50px;
-  width: 400px;
-    margin-left:100px;
-    box-shadow: #9be15d 0 0 20px;
-text-align: center;
-display:none}
-
-.closebtn {
-  margin-left: 15px;
-  color: white;
-  font-weight: bold;
-  float: right;
-  font-size: 22px;
-  line-height: 20px;
-  cursor: pointer;
-  transition: 0.3s;
-}
-
-.closebtn:hover {
-  color: black;
-}
->>>>>>> github/master

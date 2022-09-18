@@ -126,11 +126,7 @@ const smallBusinessDeclaration = () => {
         landTax.style.display = "inline-block"
         propertyTax.style.display = "none"
         land_btn.style.background = "linear-gradient(135deg,  #9796f0, #fbc7d4 100%)"
-<<<<<<< HEAD
         property_btn.style.background = "#BDC3C7"
-=======
-        property_btn.style.background = "linear-gradient(135deg,  #485563,#2932,#7AA1D2 100%)"
->>>>>>> github/master
         alert_property.style.display = "none"
 
 
@@ -142,11 +138,7 @@ const smallBusinessDeclaration = () => {
         landTax.style.display = "none"
         propertyTax.style.display = "inline-block"
         property_btn.style.background = "linear-gradient(135deg,  #9796f0, #fbc7d4 100%)"
-<<<<<<< HEAD
         land_btn.style.background = "#BDC3C7"
-=======
-        land_btn.style.background = "linear-gradient(135deg,  #485563,#2932,#7AA1D2 100%)"
->>>>>>> github/master
         alert_land.style.display = "none"
 
     });
@@ -553,11 +545,7 @@ const clear_small = () => {
                     const tax_amount_small_value = document.querySelector(".tax_amount_value")
                     const list_month_value = document.querySelector(".list_dropdown_month")
                     tax_first_input_value.value = ""
-<<<<<<< HEAD
                     tax_amount_small_value.value = "0"
-=======
-                    tax_amount_small_value.value = ""
->>>>>>> github/master
                     list_month_value.value = "January"
                     alert.style.display = "none"
 }
@@ -573,11 +561,7 @@ const clear_property_land = () => {
         tax_land_input.value = ""
         list_year_land.value = "2022"
         list_city.value = "Kutaisi"
-<<<<<<< HEAD
         land_label.value = "0"
-=======
-        land_label.value = ""
->>>>>>> github/master
 }
 
 const clear_property_property = () => {
@@ -593,11 +577,7 @@ const clear_property_property = () => {
 
 
         list_year_land.value = "2022"
-<<<<<<< HEAD
         land_label.value = "0"
-=======
-        land_label.value = ""
->>>>>>> github/master
 }
 
 const clear_vat =() => {
@@ -610,11 +590,7 @@ const clear_vat =() => {
     vat_first_input.value = ""
     vat_second_input.value = ""
     vat_month.value = "January"
-<<<<<<< HEAD
-    vat_label.value = "0"
-=======
     vat_label.value = ""
->>>>>>> github/master
 
     alert_vat.style.display = "none"
 
@@ -631,11 +607,7 @@ const clear_income = () => {
     income_first_input.value = ""
     income_second_input.value = ""
     income_month.value = "January"
-<<<<<<< HEAD
-    income_label.value = "0"
-=======
     income_label.value = ""
->>>>>>> github/master
 
     alert_income.style.display = "none"
 
