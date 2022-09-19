@@ -1,6 +1,5 @@
 // calculator dom
 
-
 const calculatorInit = () => {
     const btn_vat = document.querySelectorAll(".btn-calculator")[0]
     const btn_income = document.querySelectorAll(".btn-calculator")[1]
@@ -13,7 +12,6 @@ const calculatorInit = () => {
 
 
     btn_vat.addEventListener('click', function () {
-        console.log(9)
         let tax_input = first_input.value
         let numb = Number(tax_input)
         let vat_formulas = (numb * 18) / 100
@@ -82,8 +80,6 @@ const calculatorInit = () => {
     )
 }
 
-
-
 // declaration dom
 const smallBusinessDeclaration = () => {
     const list_dropdown = document.querySelector('.list_dropdown')
@@ -146,9 +142,7 @@ const smallBusinessDeclaration = () => {
 
 }
 
-
 const sb_api = () =>{
-
     const tax_first_input = document.querySelector(".tax_first_input").value
     const list_month = document.querySelector(".list_dropdown_month").value
     const tax_amount_small = document.querySelector(".tax_amount_value").value
@@ -203,23 +197,18 @@ const Land_amount =() => {
     if (list_city == "Kutaisi"){
         const num_land = Number(tax_land_input)
         const kutaisi_result = num_land * 71
-        console.log(kutaisi_result)
-
         land_label.value = kutaisi_result
 
     }
     else if ( list_city == "Tbilisi"){
         const num_land = Number(tax_land_input)
         const tbilisi_result = num_land * 100
-        console.log(tbilisi_result)
-
         land_label.value = tbilisi_result
 
     }
         else if ( list_city == "Batumi"){
         const num_land = Number(tax_land_input)
         const batumi_result = num_land * 94
-        console.log(batumi_result)
 
         land_label.value = batumi_result
 
@@ -227,7 +216,6 @@ const Land_amount =() => {
         else if ( list_city == "Sokhum"){
         const num_land = Number(tax_land_input)
         const Sokhum_result = num_land * 94
-        console.log(Sokhum_result)
 
         land_label.value = Sokhum_result
 
@@ -241,10 +229,11 @@ const Land_amount =() => {
 const Property_api = () =>{
 
     const land_input = document.querySelector(".tax_land_input").value
-    const list_year = document.querySelector(".list_dropdown_year").value
+    const list_year = document.querySelector(".list_dropdown_year_property").value
     const list_city = document.querySelector(".list_dropdown_city").value
     const land_label = document.querySelector(".label_tax_land").value
     const land_alert = document.querySelector(".alert_land")
+
 
     land_alert.style.display = "inline-block"
 
@@ -279,7 +268,7 @@ const Property_api = () =>{
 
     const property_income_input = document.querySelector(".property_property_input").value
     const property_value_input = document.querySelector(".property_property_input1").value
-    const list_year= document.querySelector(".list_dropdown_year").value
+    const list_year= document.querySelector(".list_dropdown_year_property").value
     const land_label1 = document.querySelector(".label_tax_property").value
      const property_alert = document.querySelector(".alert_property")
 
@@ -296,7 +285,7 @@ const Property_api = () =>{
         body: JSON.stringify(data)
 
     };
-    fetch("http://127.0.0.1:2020/Property_property_api", options)
+    fetch("/Property_property_api", options)
    }
 
 
@@ -308,8 +297,7 @@ const Property_api = () =>{
     const last_vat_numb = Number(last_vat_tax)
     const result_vat_first = (vat_amount*18)/100
     const finaly_result = result_vat_first - last_vat_numb
-          console.log(finaly_result)
-       vat_label.value = finaly_result
+          vat_label.value = finaly_result
 
 
 
@@ -319,7 +307,7 @@ const Property_api = () =>{
 
     const vat_tax_amount = document.querySelector(".vat_first_input").value
     const last_vat_tax = document.querySelector(".vat_second_input").value
-    const vat_month = document.querySelector(".list_dropdown_month").value
+    const vat_month = document.querySelector(".list_dropdown_month_vat").value
     const vat_label = document.querySelector(".label_tax_vat").value
        const alert_vat = document.querySelector(".alert_vat")
            alert_vat.style.display = "inline-block"
@@ -338,9 +326,8 @@ const Property_api = () =>{
         body: JSON.stringify(data)
 
     };
-    fetch("http://127.0.0.1:2020/vat_tax_api", options)
+    fetch("/vat_tax_api", options)
    }
-
 
   const income_amount = () => {
     const income_gross = document.querySelector(".income_first_input").value
@@ -360,7 +347,7 @@ const Property_api = () =>{
 
        const income_gross = document.querySelector(".income_first_input").value
     const income_deductions = document.querySelector(".income_second_input").value
-     const income_month = document.querySelector(".list_dropdown_month").value
+     const income_month = document.querySelector(".list_dropdown_month_income").value
     const income_label = document.querySelector(".label_tax_income").value
 
              const alert_income = document.querySelector(".alert_income")
@@ -378,12 +365,10 @@ const Property_api = () =>{
         body: JSON.stringify(data)
 
     };
-    fetch("http://127.0.0.1:2020/income_tax_api", options)
+    fetch("/income_tax_api", options)
    }
 
 //
-
-
 
 const curr = () => {
 
@@ -498,8 +483,6 @@ const click_property = () => {
 
 }
 
-
-
 const click_vat = () => {
         const small_bussines = document.querySelector(".small-business")
         const propery_tax = document.querySelector(".property_tax")
@@ -567,7 +550,7 @@ const clear_property_property = () => {
         const alert = document.querySelector(".alert")
         const property_value_input = document.querySelector(".property_property_input")
         const property_value_input1 = document.querySelector(".property_property_input1")
-        const list_year_land = document.querySelector(".list_dropdown_year")
+        const list_year_land = document.querySelector(".list_dropdown_year_property")
         const land_label = document.querySelector(".label_tax_property")
 
         alert.style.display = "none"
@@ -622,8 +605,6 @@ const clear_information = () =>{
     clear_vat()
     clear_income()
 }
-
-
 
 
 // disabled send button if input is empty
@@ -704,8 +685,6 @@ const disable_land_property = () => {
     })
 
  };
-
-
 
  const  disbale_income = () => {
     const income1 = document.querySelector(".income_first_input")
