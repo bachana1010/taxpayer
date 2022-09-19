@@ -193,7 +193,6 @@ const sb_api = () =>{
 
        tax_amount_small.value = result
 
-
    }
 
 const Land_amount =() => {
