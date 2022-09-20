@@ -437,23 +437,20 @@ margin-left: 20px;
 
 /*welcome page*/
 .welcome-container{
-     height: 100vh;
   display: flex;
   flex-direction: column;
   height: 700px;
-  width: 950px;
   border: 1px solid black;
   align-items: center;
   margin:auto;
   margin-top: 50px;
-  *	padding: 80px 30px;*/
 	width: 50%;
 	max-width: 800px;
 	border-radius: 25px;
   margin-bottom: 200px;
-    box-shadow: inset -5px -5px  linear-gradient(5535deg, #757f9a,#d7dde8);
 }
-.list_dropdown_year{
+.list_dropdown_year,
+.list_dropdown_year_property{
           	position:relative;
 	font-size: 1.7em;
 	padding: 3px;

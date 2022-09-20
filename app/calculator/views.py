@@ -6,6 +6,8 @@ from app.models import SmallBussines, Property, \
 from app import db
 
 
+
+
 calculator_blueprint = Blueprint('calculator', __name__,
                                  template_folder="templates",
                                  static_folder="templates/static")
@@ -161,32 +163,43 @@ def income_tax():
 
     return jsonify()
 
+# lists
 @calculator_blueprint.route('/sb_list', methods=['GET', 'POST'])
 def sb_list_items():
-    sb_list = SmallBussines.query.all()
+    current_id = current_user.id
+    sb_list = SmallBussines.query.filter_by(payer_id = current_id)
+
     return render_template('sb_list.html', sb_list=sb_list)
 
 
 @calculator_blueprint.route('/property_land_list', methods=['GET', 'POST'])
 def property_land_list():
-    land_list = Property.query.all()
+    current_id = current_user.id
+    land_list = Property.query.filter_by(payer_id = current_id)
+
     return render_template('land_list.html', land_list=land_list)
 
 @calculator_blueprint.route('/property_property_list', methods=['GET', 'POST'])
 def property_property_list():
-    property_list = property_property_base.query.all()
+    current_id = current_user.id
+    property_list = property_property_base.query.filter_by(payer_id = current_id)
+
     return render_template('property_property_list.html', property_list=property_list)
 
 @calculator_blueprint.route('/vat_list', methods=['GET', 'POST'])
 def vat_list():
-    vat_list = vat_tax_base.query.all()
+    current_id = current_user.id
+    vat_list = vat_tax_base.query.filter_by(payer_id = current_id)
+
     return render_template('vat_list.html', vat_list=vat_list)
 
 
 
 @calculator_blueprint.route('/income_list', methods=['GET', 'POST'])
 def income_list():
-    income_list = income.query.all()
+    current_id = current_user.id
+
+    income_list = income.query.filter_by(payer_id = current_id)
     return render_template('income_list.html', income_list=income_list)
 
 
