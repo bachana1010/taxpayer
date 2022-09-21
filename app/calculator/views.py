@@ -7,7 +7,6 @@ from app import db
 
 
 
-
 calculator_blueprint = Blueprint('calculator', __name__,
                                  template_folder="templates",
                                  static_folder="templates/static")
@@ -57,8 +56,6 @@ def welcome():
 def small_api():
     if request.method == "POST":
         params = request.get_json()
-        print(params)
-        print(current_user.id)
         user = SmallBussines(payer_id=current_user.id,
                              amount=params['tax_first_input'],
                              month=params['list_month'],
@@ -68,7 +65,6 @@ def small_api():
         try:
             db.session.commit()
         except Exception as e:
-            print(e)
             db.session.rollback()
 
     return jsonify()
@@ -78,8 +74,7 @@ def small_api():
 def property():
     if request.method == "POST":
         params = request.get_json()
-        print(params)
-        print(current_user.id)
+
         user = Property(payer_id=current_user.id,
                         land_hectare=params['land_input'],
                         Year=params['list_year'],
@@ -90,7 +85,6 @@ def property():
         try:
             db.session.commit()
         except Exception as e:
-            print(e)
             db.session.rollback()
 
     return jsonify()
@@ -100,8 +94,7 @@ def property():
 def property_property():
     if request.method == "POST":
         params = request.get_json()
-        print(params)
-        print(current_user.id)
+
         user = property_property_base(payer_id=current_user.id,
                                       income_money=params['property_income_input'],
                                       property_cost=params['property_value_input'],
@@ -112,7 +105,6 @@ def property_property():
         try:
             db.session.commit()
         except Exception as e:
-            print(e)
             db.session.rollback()
 
     return jsonify()
@@ -123,8 +115,7 @@ def vat_tax():
 
     if request.method == "POST":
         params = request.get_json()
-        print(params)
-        print(current_user.id)
+
         user = vat_tax_base(payer_id=current_user.id,
                             taxable_amount=params['vat_tax_amount'],
                             last_tax=params['last_vat_tax'],
@@ -135,7 +126,6 @@ def vat_tax():
         try:
             db.session.commit()
         except Exception as e:
-            print(e)
             db.session.rollback()
 
     return jsonify()
@@ -146,8 +136,7 @@ def income_tax():
 
     if request.method == "POST":
         params = request.get_json()
-        print(params)
-        print(current_user.id)
+
         user = income(payer_id=current_user.id,
                       gross_income=params['income_gross'],
                       deductions=params['income_deductions'],
@@ -158,7 +147,6 @@ def income_tax():
         try:
             db.session.commit()
         except Exception as e:
-            print(e)
             db.session.rollback()
 
     return jsonify()
