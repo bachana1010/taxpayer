@@ -156,39 +156,45 @@ def income_tax():
 def sb_list_items():
     current_id = current_user.id
     sb_list = SmallBussines.query.filter_by(payer_id = current_id)
+    req_pas1 = request.path
 
-    return render_template('sb_list.html', sb_list=sb_list)
+    return render_template('sb_list.html', req_pas1=req_pas1, sb_list=sb_list)
 
 
 @calculator_blueprint.route('/property_land_list', methods=['GET', 'POST'])
 def property_land_list():
     current_id = current_user.id
     land_list = Property.query.filter_by(payer_id = current_id)
+    req_pas1 = request.path
 
-    return render_template('land_list.html', land_list=land_list)
+
+    return render_template('land_list.html', req_pas1 = req_pas1, land_list=land_list)
 
 @calculator_blueprint.route('/property_property_list', methods=['GET', 'POST'])
 def property_property_list():
     current_id = current_user.id
     property_list = property_property_base.query.filter_by(payer_id = current_id)
+    req_pas1 = request.path
 
-    return render_template('property_property_list.html', property_list=property_list)
+    return render_template('property_property_list.html', req_pas1=req_pas1, property_list=property_list)
 
 @calculator_blueprint.route('/vat_list', methods=['GET', 'POST'])
 def vat_list():
     current_id = current_user.id
+    req_pas1 = request.path
     vat_list = vat_tax_base.query.filter_by(payer_id = current_id)
 
-    return render_template('vat_list.html', vat_list=vat_list)
-
-
+    return render_template('vat_list.html',req_pas1=req_pas1, vat_list=vat_list)
 
 @calculator_blueprint.route('/income_list', methods=['GET', 'POST'])
 def income_list():
     current_id = current_user.id
+    req_pas1 = request.path
 
     income_list = income.query.filter_by(payer_id = current_id)
-    return render_template('income_list.html', income_list=income_list)
+    return render_template('income_list.html', income_list=income_list, req_pas1 = req_pas1 )
+
+
 
 
 @calculator_blueprint.route('/logout', methods=['GET'])

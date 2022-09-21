@@ -11,12 +11,36 @@
 
 </head>
 <body>
-    <div class="hedder_list">
-        <a href="/sb_list" class="s">small business list</a>
-        <a href="/income_list" class="i">income list </a>
-        <a href="/vat_list" class="l">vat list</a>
-        <a href="/property_land_list" class="l">land list</a>
-    </div>
+       <header class="header">
+    <nav class="nav">
+
+        <ul class="nav__links">
+            <li class="nav__item">
+                <a class="nav__link" href="/welcome"><<< go back </a>
+            </li>
+            <li class="nav__item">
+                <a class="nav__link{% if req_pas1 == '/sb_list' %} nav__link--btn {% endif %}" href="/sb_list">small bussines list</a>
+            </li>
+            <li class="nav__item">
+                <a class="nav__link{% if req_pas1 == '/property_land_list' %} nav__link--btn {% endif %}" href="/property_land_list">land list
+                     </a>
+            </li>
+
+             <li class="nav__item">
+                <a class="nav__link{% if req_pas1 == '/property_property_list' %} nav__link--btn {% endif %}" href="/property_property_list">property list </a>
+            </li>
+              <li class="nav__item">
+                <a class="nav__link{% if req_pas1 == '/vat_list' %} nav__link--btn {% endif %}" href="/vat_list"> vat list</a>
+            </li>
+            <li class="nav__item">
+                <a class="nav__link{% if req_pas1 == '/income_list' %} nav__link--btn {% endif %}" href="/income_list">income list
+                    </a>
+            </li>
+
+
+</ul>
+    </nav>
+    </header>
 
 
 
