@@ -1,12 +1,29 @@
-{% extends "base.html" %}
-{% block content %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Property List </title>
+        <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='styles/second.css') }}">
+
+
+</head>
+<body>
+    <div class="hedder_list">
+        <a href="/sb_list" class="s">small business list</a>
+        <a href="/income_list" class="i">income list </a>
+        <a href="/vat_list" class="l">vat list</a>
+        <a href="/property_land_list" class="l">land list</a>
+    </div>
 
 
 
 
-<table class="table table-striped table-dark">
-  <thead>
-    <tr>
+        <table class="container">
+            <thead>
+             <tr>
       <th scope="col">#</th>
       <th scope="col">income money</th>
       <th scope="col">property_cost</th>
@@ -14,8 +31,8 @@
         <th scope="col">amount</th>
 
     </tr>
-  </thead>
-  <tbody>
+            </thead>
+            <tbody>
 
 
         {% for property_list in property_list %}
@@ -31,8 +48,14 @@
     </tr>
         {% endfor %}
 
+            </tbody>
+        </table>
 
   </tbody>
 </table>
 
-{% endblock %}>
+
+</body>
+</html>
+
+
