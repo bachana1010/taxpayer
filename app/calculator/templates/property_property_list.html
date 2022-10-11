@@ -45,6 +45,7 @@
 
 
 
+
         <table class="container">
             <thead>
              <tr>
@@ -68,7 +69,8 @@
       <td>{{ property_list.property_cost }}</td>
       <td>{{ property_list.year }}</td>
          <td>{{ property_list.tax_amount }}</td>
-          <td> <a href="/update/{{property_list.id}}" class="btn btn-warning btn-xs" data-toggle="modal" data-target="#modaledit{{property_list.id}}">Edit</a>
+          <td>
+<!--              <a href="/update/{{property_list.id}}" class="btn btn-warning btn-xs" data-toggle="modal" data-target="#modaledit{{property_list.id}}">Edit</a>-->
 
                          <a href="/delete_property/{{property_list.id}}" class="btn btn-danger btn-xs" onclick="return confirm('Are You Sure To Delete ?')">Delete</a>
           </td>
