@@ -1,6 +1,6 @@
 from flask import Blueprint, flash, url_for, \
     redirect, render_template, request, session
-from flask_login import login_user, current_user
+from flask_login import login_user, current_user, logout_user
 
 from app.login.forms import RegistrationForm, LoginForm
 from app.models import User
@@ -50,3 +50,14 @@ def login():
             return redirect(next)
 
     return render_template(templs, req_pas=req_pas, form=form, current=current)
+
+
+@user_blueprint.route('/logout', methods=['GET'])
+def logout():
+    logout_user()
+    flash("მომხმარებელი გამოვიდა სისტემიდან")
+    req_pas = request.path
+    templs = ["home.html", "base.html"]
+    session["logged_in"] = False
+
+    return render_template(templs, req_pas=req_pas)

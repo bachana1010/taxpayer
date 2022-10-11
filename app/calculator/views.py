@@ -1,4 +1,4 @@
-from flask import Blueprint, render_template, flash, request, jsonify, session
+from flask import Blueprint, render_template, flash, request, jsonify, session,redirect, url_for
 from flask_login import logout_user, login_required, current_user
 from app.services.currency import currency_course
 from app.models import SmallBussines, Property, \
@@ -195,14 +195,57 @@ def income_list():
     return render_template('income_list.html', income_list=income_list, req_pas1 = req_pas1 )
 
 
+#delete
+
+@calculator_blueprint.route('/delete_sb/<id>/', methods=['GET', 'POST'])
+def delete_sb(id):
+    my_data = SmallBussines.query.get(id)
+    db.session.delete(my_data)
+    db.session.commit()
+    flash("employee delete sucssesfully")
+
+    return redirect(url_for('calculator.sb_list_items'))
 
 
-@calculator_blueprint.route('/logout', methods=['GET'])
-def logout():
-    logout_user()
-    flash("მომხმარებელი გამოვიდა სისტემიდან")
-    req_pas = request.path
-    templs = ["home.html", "base.html"]
-    session["logged_in"] = False
+@calculator_blueprint.route('/delete_land/<id>/', methods=['GET', 'POST'])
+def delete_land(id):
+    my_data = Property.query.get(id)
+    db.session.delete(my_data)
+    db.session.commit()
+    flash("employee delete sucssesfully")
 
-    return render_template(templs, req_pas=req_pas)
+    return redirect(url_for('calculator.property_land_list'))
+
+
+@calculator_blueprint.route('/delete_property/<id>/', methods=['GET', 'POST'])
+def delete_property(id):
+    my_data = property_property_base.query.get(id)
+    db.session.delete(my_data)
+    db.session.commit()
+    flash("employee delete sucssesfully")
+
+    return redirect(url_for('calculator.property_property_list'))
+
+
+@calculator_blueprint.route('/delete_vat/<id>/', methods=['GET', 'POST'])
+def delete_vat(id):
+    my_data = vat_tax_base.query.get(id)
+    db.session.delete(my_data)
+    db.session.commit()
+    flash("employee delete sucssesfully")
+
+    return redirect(url_for('calculator.vat_list'))
+
+@calculator_blueprint.route('/delete_income/<id>/', methods=['GET', 'POST'])
+def delete_income(id):
+    my_data = income.query.get(id)
+    db.session.delete(my_data)
+    db.session.commit()
+    flash("employee delete sucssesfully")
+
+    return redirect(url_for('calculator.income_list'))
+
+
+
+
+

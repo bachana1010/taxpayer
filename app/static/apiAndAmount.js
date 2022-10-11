@@ -13,14 +13,6 @@ const sb_api = () =>{
     list_month_value.value = "January"
     alert.style.display = "inline-block"
 
-    // if (tax_first_input_value.value || tax_amount_small_value.value == null){
-    //     document.querySelector(".send_btn").disabled = true;
-    //
-    // } else{
-    //             document.querySelector(".send_btn").disabled = true;
-    //
-    // }
-
        const data = {tax_first_input, list_month, tax_amount_small}
 
     const options = {
